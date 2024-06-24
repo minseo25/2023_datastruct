@@ -1,0 +1,15 @@
+JAVA_OPTS="-Xms1024m -Xmx4096m"
+
+java MainBst ./public/10words.txt ./public/10words.txt > output/1.out
+
+java MainBst ./public/1000words.txt ./public/2000words.txt > output/2.out
+
+java MainBst ./public/1000words.txt ./public/2000words2.txt > output/3.out
+
+java ${JAVA_OPTS} MainBst ./public/sawyer.txt ./public/sawyer.txt > output/4.out
+
+java ${JAVA_OPTS} MainBst ./public/sawyer.txt ./public/mohicans.txt > output/5.out
+
+java ${JAVA_OPTS} MainBst ./public/mohicans.txt ./public/mohicans.txt > output/6.out
+
+java ${JAVA_OPTS} MainBst ./public/mohicans.txt ./public/sawyer.txt > output/7.out
